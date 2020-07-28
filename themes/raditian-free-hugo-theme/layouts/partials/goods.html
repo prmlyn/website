@@ -1,0 +1,36 @@
+{{ if .Site.Data.homepage.goods.enable }}
+<section id="goods" class="section section--border-bottom">
+    <div class="container">
+        <div class="rad-animation-group row rad-fade-down row--padded">
+            <div class="col-12">
+                <h3>{{ .Site.Data.homepage.goods.title }}</h3>
+                <h4 class="pt-4">Múka</h4>
+                <hr>
+                <div class="row md-4">
+                    {{ range .Site.Data.homepage.goods.items }}
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="goods">
+                            <div class="goods__title">{{ .name }}</div>
+<!--                            <div class="education__degree mb-4">{{ .description }}</div>-->
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+                <h4 class="pt-5">Krmivo</h4>
+                <hr>
+                <div class="row md-4">
+                    {{ range .Site.Data.homepage.krmivo.items }}
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="goods">
+                            <div class="goods__title">{{ .name }}</div>
+<!--                            <div class="education__degree mb-4">{{ .description }}</div>-->
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

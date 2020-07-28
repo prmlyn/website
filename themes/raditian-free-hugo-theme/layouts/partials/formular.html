@@ -1,0 +1,38 @@
+{{ if .Site.Data.homepage.formular.enable }}
+<section id="formular" class="section">
+    <div class="container">
+        <div class="formular rad-animation-group row rad-fade-down">
+            <h2>{{ .Site.Data.homepage.formular.title }}</h2>
+            <div class="col-12">
+                <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
+                    <div class="row pt-5">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" name="entry.1214231664" id="full_name"
+                                   placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" name="emailAddress" id="email"
+                                   placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-12">
+                            <textarea name="entry.2143737660" id="message"
+                                      cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
+                                {{ .Site.Data.homepage.contact.button.btnText }}
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{{ end }}

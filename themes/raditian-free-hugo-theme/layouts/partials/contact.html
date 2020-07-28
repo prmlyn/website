@@ -1,0 +1,35 @@
+{{ if .Site.Data.homepage.contact.enable }}
+<section id="contact" class="section section--border-bottom">
+    <div class="container">
+        <div class="contact">
+            <h2>{{ .Site.Data.homepage.contact.title }}</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-4 contact__info">
+                    <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
+                    <span>{{ .Site.Data.homepage.contact.phone.number_primary | safeHTML }}</span>
+                    <br />
+                    <span>{{ .Site.Data.homepage.contact.phone.number_secondary | safeHTML }}</span>
+                    <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
+                    <span>{{ .Site.Data.homepage.contact.email.email | safeHTML }}</span>
+                    <h4>{{ .Site.Data.homepage.contact.address.title }}</h4>
+                    <span>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</span>
+                </div>
+                <div class="col-12 col-lg-3 opening__hours">
+                    <h4 class="">{{ .Site.Data.homepage.opening_hours.title }}</h4>
+                    {{ range .Site.Data.homepage.opening_hours.items }}
+                    <h5>{{ .day }}</h5>
+                    <span>{{ .hours }}</span>
+                    {{ end }}
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21040.999735955535!2d17.823802049999998!3d48.760409800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5af1495b41c67e74!2sP.%20R.%20Mlyn%20S.R.O.!5e0!3m2!1ssk!2ssk!4v1595797493169!5m2!1ssk!2ssk"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
