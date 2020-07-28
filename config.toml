@@ -1,0 +1,65 @@
+baseURL = "prmlyn.github.io"
+languageCode = "sk-SK"
+theme = "raditian-free-hugo-theme"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+
+
+# navigation
+[menu]
+
+  [[menu.header]]
+  name = "Ponuka"
+  URL = "#goods"
+  weight = 2
+
+  [[menu.header]]
+  name = "Náš mlyn"
+  URL = "#portfolio"
+  weight = 3
+
+  [[menu.header]]
+  name = "Kontakt"
+  URL = "#contact"
+  weight = 4
+
+
+
+[params]
+
+  sections = ["showcase", "about", "education", "goods", "experience", "client-and-work", "testimonial", "contact", "formular"]
+
+  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+
+  [params.logo]
+    text1 = "P.R. Mlyn"
+
+  [params.footer]
+      copyright = "© Raditian 2020"
+
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+
+googleAnalytics = "UA-123-45"
