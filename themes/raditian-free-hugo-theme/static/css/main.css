@@ -10622,7 +10622,7 @@ input[type=text]::placeholder, input[type=email]::placeholder {
 
 .goods__title {
     position: relative;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
     z-index: 2
 }
@@ -10803,12 +10803,12 @@ html body {
 }
 
 html body ::-moz-selection {
-    background-color: #e93e34;
+    background-color: #ffbb00;
     color: #fff
 }
 
 html body ::selection {
-    background-color: #e93e34;
+    background-color: #ffbb00;
     color: #fff
 }
 
@@ -11585,6 +11585,12 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
     width: 100%;
 }
 
-.formular {
-
+.goods span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    color: #000
 }
