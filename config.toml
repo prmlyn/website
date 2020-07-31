@@ -1,6 +1,7 @@
 baseURL = "prmlyn.github.io"
 languageCode = "sk-SK"
 theme = "raditian-free-hugo-theme"
+publishDir = "docs"
 
 # Plugins
 [params.plugins]
