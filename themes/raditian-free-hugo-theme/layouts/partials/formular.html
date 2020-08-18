@@ -1,24 +1,32 @@
 {{ if .Site.Data.homepage.formular.enable }}
 <section id="formular" class="section">
     <div class="container">
-        <div class="formular rad-animation-group row rad-fade-down">
+        <div class="formular">
             <h2>{{ .Site.Data.homepage.formular.title }}</h2>
             <div class="col-12">
-                <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
+                <form action="{{ .Site.Data.homepage.formular.form.action }}" method="{{ .Site.Data.homepage.formular.form.method }}">
                     <div class="row pt-5">
                         <div class="col-12 col-sm-6">
-                            <input type="text" name="entry.1214231664" id="full_name"
-                                   placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
+                            <input type="text" required name="entry.864258558" id="full_name"
+                                   placeholder="{{ .Site.Data.homepage.formular.form.full_name }}"/>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <input type="email" name="emailAddress" id="email"
-                                   placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
+                            <input type="email" required name="emailAddress" id="email"
+                                   placeholder="{{ .Site.Data.homepage.formular.form.email }}"/>
                         </div>
                     </div>
                     <div class="row pt-4">
                         <div class="col-12">
-                            <textarea name="entry.2143737660" id="message"
-                                      cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
+<!--                            entry.1765784245-->
+                            <textarea required name="entry.1858830692" id="message"
+                                      cols="30" rows="3" placeholder="{{ .Site.Data.homepage.formular.form.message }}"></textarea>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-12">
+                            <input type="checkbox" required name="entry.1765784245_sentinel" id="consent"/>
+                            <label for="consent">Súhlasím, aby spoločnosť P.R. Mlyn s.r.o. ako správca spracovávala moju emailovú adresu a
+                                meno za účelom spracovania objednávok a dotazov.</label>
                         </div>
                     </div>
                     <div class="row pt-4">

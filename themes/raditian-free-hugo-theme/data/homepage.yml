@@ -1,14 +1,14 @@
 # showcase
 showcase:
   enable: true
-  title: "Vitajte na stránke nášho mlynu"
+  title: "Vitajte na stránke nášho mlyna"
 #  subtitle: "Milujeme buriny v prášku"
   description: "Ponúkame výrobu a predaj mlynárskych výrobkov, kŕmnych zmesí a hotového krmiva pre hospodárske a domáce zvieratá."
   image:
-    x: "img/showcase/pasta_dcp.png"
-    _2x: "img/showcase/pasta_dcp@2x.png"
+    x: "img/showcase/mlyn_2.jpg"
+    _2x: "img/showcase/mlyn_2@2x.jpg"
   imageMobile:
-    x: "img/showcase/pasta-mobile.png"
+    x: "img/showcase/mlyn_2.jpg"
 
   button:
     icon: "icon-mail-fill"
@@ -56,31 +56,34 @@ goods:
   enable: true
   title: "Čo ponúkame"
   items:
-    - name: "Pšeničná hrubá múka zlatý klas"
+    - name: "Pšeničná múka hrubá Zlatý klas"
       description: "0.42€"
 
-    - name: "Pšeničná polohrubá múka výberová"
+    - name: "Pšeničná múka polohrubá výberová"
       description: "0.42€"
 
     - name: "Pšeničná múka hladká chlebová T-650"
       description: "0.42€"
 
-    - name: "Pšeničná hladká múka špeciál 00 extra"
+    - name: "Pšeničná múka hladká špeciál 00 Extra"
       description: "0.42€"
 
-    - name: "Pšeničná hladká múka chlebová tmavá T-1050"
+    - name: "Pšeničná múka hladká chlebová tmavá T-1050"
       description: "0.39€"
 
-    - name: "Pšeničná múka graham"
+    - name: "Pšeničná múka Graham"
       description: "0.39€"
 
-    - name: "Múka ražná chlebová T-930"
+    - name: "Ražná múka chlebová T-930"
       description: "0.42€"
 
-    - name: "Múka ražná celozrnná"
+    - name: "Ražná múka celozrnná"
       description: "0.39€"
 
-    - name: "Múka špaldová celozrnná"
+    - name: "Špaldová múka celozrnná"
+      description: "0.39€"
+
+    - name: "Pšeničná drť"
       description: "0.39€"
 
 
@@ -138,15 +141,29 @@ client_and_work:
     - title: "Takúto budovu máme"
       description: "Dobrá budova"
       image:
-        x: "img/works/cbk.jpeg"
-        _2x: "img/works/cbk.jpeg"
+        x: "img/works/mlyn_5.jpg"
+        _2x: "img/works/mlyn_5@2x.jpg"
       is_even: true
 
     - title: "Takéto kvalitné mechy máme"
       description: "Tu sú zabalené dobré múky"
       image:
-        x: "img/works/mlyn1.JPG"
-        _2x: "img/works/mlyn1.JPG"
+        x: "img/works/mlyn_1.jpg"
+        _2x: "img/works/mlyn_1@2x.jpg"
+      is_even: false
+
+    - title: "Takéto kvalitné mechy máme"
+      description: "Tu sú zabalené dobré múky"
+      image:
+        x: "img/works/mlyn_6.jpg"
+        _2x: "img/works/mlyn_6@2x.jpg"
+      is_even: true
+
+    - title: "Takéto kvalitné mechy máme"
+      description: "Tu sú zabalené dobré múky"
+      image:
+        x: "img/works/mlyn_3.jpg"
+        _2x: "img/works/mlyn_3@2x.jpg"
       is_even: false
 
 # testimonial
@@ -194,7 +211,7 @@ contact:
     email: '<a href="mailto:p.r.mlyn@zoznam.sk">p.r.mlyn@zoznam.sk</a>'
   address:
     title: "Adresa"
-    address: '<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/AByfV1Amb2ypHxP99">P. R. Mlyn S.R.O.<br />Bzinská 3, 915 01 Nové Mesto nad Váhom</a>'
+    address: '<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/AByfV1Amb2ypHxP99">P. R. Mlyn s.r.o.<br />Bzinská 3, 915 01 Nové Mesto nad Váhom</a>'
   button:
     icon: "icon-mail-fill"
     btnText: "Odoslat správu"
@@ -208,15 +225,16 @@ opening_hours:
     - day: "Sobota-nedeľa"
       hours: "Zatvorené"
 
-# formular
+# form
 formular:
-  enable: false
+  enable: true
   title: "Kontaktný formulár"
   form:
-    action: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdmZ2CS8_oE6r3lcvwoguOnRk4KDFpgHGnkQK7fMR7C0JzuPg/formResponse"
+    action: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEaEkEvhp2U8HObPvndJih7njzHlO67Ruk03dAPMgztxtCyw/formResponse"
     full_name: "Celé meno"
     email: "Emailová adresa"
     message: "Napísať správu"
+    consent_message: "Súhlasím, aby spoločnosť P.R. Mlyn s.r.o. ako správca spracovávala moju emailovú adresu a meno za účelom spracovania objednávok a dotazov."
   phone:
     title: "Telefónne číslo"
     number_primary: '<a href="tel:032/7716446">032 / 771 64 46</a>'
