@@ -2,6 +2,7 @@ baseURL = "https://prmlyn.sk/"
 languageCode = "sk-SK"
 theme = "raditian-free-hugo-theme"
 publishDir = "docs"
+title = "P.R. Mlyn"
 
 # Plugins
 [params.plugins]

@@ -1,10 +1,11 @@
 <!-- inject:../components/baseHead/baseHeadStart.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+	<title>{{ .Title }}</title>
+	<link rel="icon" href="{{ .Site.Data.homepage.general.icon | absURL }}" type="image/icon type">
 
-    {{ partial "head.html" . }}
+	{{ partial "head.html" . }}
 
     {{ partial "head_custom.html" . }}
 

@@ -1,3 +1,7 @@
+# general
+general:
+  icon: "img/general/mill.svg"
+
 # showcase
 showcase:
   enable: true
